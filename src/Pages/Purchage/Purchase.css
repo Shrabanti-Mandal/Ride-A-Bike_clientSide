@@ -1,0 +1,7 @@
+.purchase-details {
+  display: flex;
+  margin-top: 10%;
+}
+.purchase-details img {
+  width: 60%;
+}
