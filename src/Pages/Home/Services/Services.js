@@ -6,23 +6,23 @@ import Service from "../Service/Service";
 
 const services = [
   {
-    name: "Car Repair",
+    name: "Bike Repair",
     description:
-      "We have our professional automobile care service partners with Skilled mechanics.We are making a one-stop car care service solution because your flexibility is our main priority.",
+      "We have our professional automobile care service partners with Skilled mechanics.We are making a one-stop bikecare service solution because your flexibility is our main priority.",
 
-    img: "https://media.istockphoto.com/photos/auto-mechanic-working-on-car-engine-in-mechanics-garage-repair-picture-id1284285171?b=1&k=20&m=1284285171&s=170667a&w=0&h=mB0wBqa5W3R_X9NRaAKZu9zguEf9CmMsOClDPX23uoI=",
+    img: "https://i.ibb.co/4WQTMxy/Image-is-close-up-People-holding-hand-are-repairing-a-motorcycle-Use-a-wrench-and-a-screwdriver-to-w.jpg",
   },
   {
-    name: "Car Wash",
+    name: "Bike Wash",
     description:
-      "According to Damon Lawrence who runs automotive detailing business Auto Attention, car washes are a major cause of paintwork getting damaged.As a general rule of thumb, it's important to wash your car at least every two weeks.",
-    img: "https://ad962edbae8ba7b03b7f-d10007df79b5b7a4e475a291e50a08cf.ssl.cf3.rackcdn.com/2713/market-research-car-wash.png",
+      "According to Damon Lawrence who runs automotive detailing business Auto Attention, bikewashes are a major cause of paintwork getting damaged.As a general rule of thumb, it's important to wash your bikeat least every two weeks.",
+    img: "https://i.ibb.co/Bs3K2Xv/download-1.jpg",
   },
   {
-    name: "Car Rent",
+    name: "Bike Rent",
     description:
       "With a little planning, driving in Dhaka with the help of our expert drivers is a great way to get around the city. Our drivers obey the speed limits, and when driving in the city will typically be 40km/h, but always the driver check signs for the route that you are on.",
-    img: "https://media.istockphoto.com/photos/close-up-of-a-man-receiving-new-car-key-picture-id628453996?k=20&m=628453996&s=612x612&w=0&h=o0YMpSeU9tL73tn3xih1fGd3RQ8XViJpIgOeCTI_RB4=",
+    img: "https://i.ibb.co/Z1zCHTF/Rent-Bike-in-Goa-20180226115915.jpg",
   },
 ];
 

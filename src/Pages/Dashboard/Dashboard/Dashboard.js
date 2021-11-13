@@ -75,7 +75,9 @@ function Dashboard(props) {
       )}
 
       <Divider />
-
+      <Link to={`/`}>
+        <Button color="inherit">Home</Button>
+      </Link>
       <Button onClick={logOut} color="inherit">
         Log Out
       </Button>

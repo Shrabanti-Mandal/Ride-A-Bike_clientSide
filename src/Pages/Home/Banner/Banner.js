@@ -34,21 +34,21 @@ const Banner = () => {
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img
-              src="https://i.ibb.co/WcWbwDf/car1.jpg"
+              src="https://i.ibb.co/mTR2Jjm/photo-1449426468159-d96dbf08f19f.jpg"
               class="d-block w-100"
               alt="..."
             />
           </div>
           <div class="carousel-item">
             <img
-              src="https://i.ibb.co/9Hnywmj/car2.jpg"
+              src="https://i.ibb.co/zJn6jvX/bmw-k-1300-metallic-motorcycle-40904.jpg"
               class="d-block w-100"
               alt="..."
             />
           </div>
           <div class="carousel-item">
             <img
-              src="https://i.ibb.co/qmGQm40/car3-1.jpg"
+              src="https://i.ibb.co/GQJmQZs/download.jpg"
               class="d-block w-100"
               alt="..."
             />

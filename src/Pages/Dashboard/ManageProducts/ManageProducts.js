@@ -14,30 +14,31 @@ const ManageProducts = () => {
   const [bikes, setBikes] = useState([]);
 
   const handleDelete = (id) => {
-    const url = `http://localhost:5000/allBikes/${id}`;
-    fetch(url, {
-      method: "DELETE",
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        if (data.deletedCount) {
-          const remaining = bikes.filter((order) => order._id !== id);
-          alert("deleted");
-          setBikes(remaining);
-        }
-      });
+    const yes = window.confirm("Are You Sure.?");
+    if (yes === true) {
+      const url = `https://cryptic-inlet-63438.herokuapp.com/allBikes/${id}`;
+      fetch(url, {
+        method: "DELETE",
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          if (data.deletedCount) {
+            const remaining = bikes.filter((order) => order._id !== id);
+            alert("deleted");
+            setBikes(remaining);
+          }
+        });
+    }
   };
 
   useEffect(() => {
-    fetch("http://localhost:5000/allBikes")
+    fetch("https://cryptic-inlet-63438.herokuapp.com/allBikes")
       .then((res) => res.json())
       .then((data) => setBikes(data));
   }, []);
 
   return (
     <div>
-      <h1>ManageProducts</h1>
-
       <TableContainer>
         <Table sx={{ minWidth: 650 }} aria-label="simple table">
           <TableHead>
@@ -56,9 +57,6 @@ const ManageProducts = () => {
                 sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
                 handleDelete={handleDelete}
               >
-                {/* <TableCell component="th" scope="row">
-                  {row.bikeName}
-                </TableCell> */}
                 <TableCell align="left">{row.bikeName}</TableCell>
                 <TableCell align="left">{row.price}</TableCell>
                 <TableCell align="left">

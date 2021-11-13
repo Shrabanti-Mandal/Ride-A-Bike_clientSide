@@ -20,7 +20,7 @@ const AddServices = () => {
       ...bikeInfo,
     };
     //send to the server
-    fetch("http://localhost:5000/bikes", {
+    fetch("https://cryptic-inlet-63438.herokuapp.com/bikes", {
       method: "POST",
       headers: {
         "content-type": "application/json",

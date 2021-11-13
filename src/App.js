@@ -28,27 +28,25 @@ function App() {
             <Route path="/register">
               <Register></Register>
             </Route>
-            {/* <Route path="/addServices">
-              <AddServices></AddServices>
-            </Route> */}
+
             <PrivateRoute path={"/purchase/:Id"}>
               <Purchase></Purchase>
             </PrivateRoute>
             <PrivateRoute path="/explore">
               <Explore></Explore>
             </PrivateRoute>
-            <PrivateRoute path="/pay">
+            {/* <PrivateRoute path="/pay">
               <Pay></Pay>
-            </PrivateRoute>
-            <PrivateRoute path="/reviews">
+            </PrivateRoute> */}
+            {/* <PrivateRoute path="/reviews">
               <Reviews></Reviews>
-            </PrivateRoute>
+            </PrivateRoute> */}
             <PrivateRoute path="/dashboard">
               <Dashboard></Dashboard>
             </PrivateRoute>
-            <PrivateRoute path="/myOrders">
+            {/* <PrivateRoute path="/myOrders">
               <MyOrders></MyOrders>
-            </PrivateRoute>
+            </PrivateRoute> */}
             <Route exact path="/">
               <Home></Home>
             </Route>

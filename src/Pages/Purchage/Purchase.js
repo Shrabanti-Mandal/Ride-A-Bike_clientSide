@@ -11,13 +11,13 @@ const Purchase = () => {
   const [singleProduct, setSingleProduct] = useState({});
   const history = useHistory();
 
-  const redirect = "/home";
+  const redirect = "/dashboard";
 
   const onSubmit = (data) => {
     data.image = singleProduct.image;
     data.bikeName = singleProduct.bikeName;
     console.log(data);
-    fetch("http://localhost:5000/createBooking", {
+    fetch("https://cryptic-inlet-63438.herokuapp.com/createBooking", {
       method: "post",
       headers: {
         "content-type": "application/json",
@@ -35,7 +35,7 @@ const Purchase = () => {
   };
 
   useEffect(() => {
-    fetch("http://localhost:5000/allBikes")
+    fetch("https://cryptic-inlet-63438.herokuapp.com/allBikes")
       .then((res) => res.json())
       .then((data) => setproductDetails(data));
   }, []);

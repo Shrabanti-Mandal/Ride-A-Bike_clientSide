@@ -31,7 +31,7 @@ const Reviews = () => {
       ...reviews,
     };
     //send to the server
-    fetch("http://localhost:5000/reviews", {
+    fetch("https://cryptic-inlet-63438.herokuapp.com/reviews", {
       method: "POST",
       headers: {
         "content-type": "application/json",
